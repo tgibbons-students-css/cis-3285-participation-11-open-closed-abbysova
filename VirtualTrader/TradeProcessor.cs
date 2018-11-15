@@ -142,7 +142,7 @@ namespace VirtualTrader
             LogMessage("INFO: {0} trades processed", trades.Count());
         }
 
-        public virtual void ProcessTrades(Stream stream)
+        public void ProcessTrades(Stream stream)
         //public void ProcessTrades(string url)
         {
             var lines = ReadTradeData(stream);
